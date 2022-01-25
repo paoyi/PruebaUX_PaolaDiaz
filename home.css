@@ -84,6 +84,7 @@
     position: relative;
     display: inline-block;
     text-align: center;
+    width: 100%;
   }
   .main img{
     max-width: 100%;
