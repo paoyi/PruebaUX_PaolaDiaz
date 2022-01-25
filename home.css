@@ -1,0 +1,361 @@
+  @font-face {
+    font-family: 'Monster Clubhouse';
+    src: url('fonts/Monster Clubhouse'); 
+    src: url('fonts/Monster Clubhouse.ttf')  format('truetype');
+
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins') format('truetype');
+    src: url('fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+  }
+
+  @media screen and (min-width: 769px) {
+    .icon-home{
+      display: none;
+     }
+  }
+
+  nav {
+    padding: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    letter-spacing: 0px;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  @media only screen and (max-width: 768px) {
+    nav{
+      display: none;
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  @media only screen and (min-width: 480px) {
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  nav li a {
+    color: #425966;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+  
+  }
+  nav li a:hover {
+    color: #D84A4A;
+  }
+
+  .app-name{
+    color: #425966;
+    text-align: left;
+    font: normal normal normal 40px/54px Monster Clubhouse;
+    letter-spacing: 1.15px;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-left: 1em;
+  }
+
+  .app-name > .app{
+    color: #D84A4A;
+    font: normal normal normal 30px/46px Poppins;
+    letter-spacing: 0.86px;
+    margin-left: -10px;
+  }
+
+  .main{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .main img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+   }
+
+   @media screen and (min-width: 320px) and (max-width: 428px) {
+    .main img {
+      width: 720px;
+      height: 234px;
+      object-fit: cover;
+    }
+  }
+   
+.main .title{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -50%);
+  text-align: left;
+  font: normal normal normal 74px/60px Poppins;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.main .title .description{
+  font: normal normal normal 67px/91px Monster Clubhouse;
+}
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+  .main .title {
+    font-size: 51px;
+    line-height: 40px;
+  }
+  .main .title .description{
+    font-size: 51px;
+    line-height: 10px;
+  }
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translateY(-40%);
+}
+@media screen and (min-width: 769px) {
+   .menu{
+     display: none;
+   }
+}
+@media screen and (max-width: 767px) {
+  .menu{
+    transform: translateY(-20%);
+  }
+}
+
+.menu .menu-option {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 14%; 
+  min-width: 95px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 9px #8395A766;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  font: normal normal normal 13px/20px Poppins;
+  letter-spacing: 0px;
+  color: #425966;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 468px) {
+  .menu .menu-option{
+    flex: 0 1 28%;  
+  }
+}
+
+.recipes-section {
+  margin-top: 1em;
+  
+}
+@media screen and (max-width: 768px) {
+  .recipes-section{
+    margin-top: -2em;
+  }
+}
+.recipes-section .title{
+  text-align: left;
+  font: normal normal normal 67px/91px Monster Clubhouse;
+  letter-spacing: 0px;
+  color: #D84A4A;
+  opacity: 1;
+  padding-left: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+
+  .recipes-section .title{
+    font-size: 54px;
+    line-height: 74px; 
+  }
+}
+
+.recipes-section .swiper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: 1em;
+  margin-right: 1em;
+  min-height: 390px;
+}
+
+.recipes-section .swiper .card {
+  display: flex;
+  flex-direction: column;
+  background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 9px #8395A766;
+  border-radius: 10px;
+  margin: 10px auto;
+  min-width: 190px;
+  margin-top: 2.5em;
+}
+
+.card .card-content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transform: translateY(-20%);
+}
+
+.card .card-content .card-img{
+  width: 164px;
+  height: 158px;
+}
+
+.card .card-content span{
+  font: normal normal normal 30px/40px Poppins;
+  letter-spacing: -0.6px;
+  color: #D84A4A;
+}
+.card .card-content span > .font-monster{
+  font-family: Monster Clubhouse;
+}
+.card:hover {
+  height: 332px;
+}
+
+.card:hover .card-content {  
+  transform: translateY(-15%);
+}  
+
+.card:hover .card-content > .card-details, 
+.card:hover .card-content > .card-title{  
+  display: none;
+}  
+
+
+@media only screen and (min-width: 320px) and (max-width: 428px) {
+  .card > .card-content span {
+    font-size: 20px;
+    line-height: 27px;  
+  }
+}
+
+.card .card-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 1em;
+}
+
+.card .card-details .score > span{
+  font: normal normal normal 26px/39px Poppins;
+  letter-spacing: -0.52px;
+  color: #425966;
+  opacity: 1;
+}
+
+
+.favorite{
+  padding-right: 0.5em;
+}
+
+.star{
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.card .card-summary{  
+  display: none;
+} 
+.card:hover .card-summary{  
+  display: block;
+} 
+
+.card-summary img{
+  width: 17px;
+  height: 17px;
+}
+.card-summary .feature{
+  font: normal normal normal 17px/20px Monster Clubhouse;
+  color: #D84A4A;
+  letter-spacing: 0px;
+}
+
+.card-summary .value{
+  font: normal normal normal 15px/20px Poppins;
+  letter-spacing: 0px;
+  color: #425966;
+}
+
+
+footer{
+  max-width: 100%;
+  height: auto;
+  background: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 4px 6px 23px #A9A9A911;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer  span {
+  text-align: left;
+  font: normal normal normal 56px/76px Monster Clubhouse;
+  letter-spacing: 0px;
+  color: #425966;   
+}
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+  footer span {
+    font-size: 23px;
+    line-height: 31px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer span {
+    font-size: 39px;
+    line-height: 53px;
+  }
+}
+footer  img{
+  width: 43%;
+  height: auto;
+  opacity: 1;
+  display: flex;
+  justify-content: flex-end;
+}
